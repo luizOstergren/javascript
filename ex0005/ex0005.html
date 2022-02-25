@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos DOM</title>
+    <style>
+body{
+    background-color: rgb(59, 34, 34);
+    color: rgb(108, 108, 161);
+    font-size: normal 20pt Arial;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resutado</p>
+    <p>Aprendendo a isar o <strong>DOM</strong> em JavaScript</p>
+    <div id= "msg"> Clique em mim</div>   
+    <script>  //na linha acima troca o id pelos outros selecionadores para manter a mesma fnç
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] //seleciona os paragrafos
+        var d = window.document.getElementById('msg')
+        corpo.style.background = 'purple'
+        p1.style.color = 'pink'
+        d.innerText = 'estou aguardando....'
+        //window.document.getElementById('msg').innerText = 'Olá' //outra forma de escrever a linha acima
+        document.write(p1.innerText)  //repete a escrita do p1
+    //var d = window.document.querySelector('div#msg') //a id usa # e o class .
+    </script>
+</body>
+</html>

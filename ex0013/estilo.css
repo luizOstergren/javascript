@@ -1,0 +1,26 @@
+body{
+background-color: black;
+font-size: normal 18pt Arial;
+}
+
+header{
+color: white;
+text-align: center;
+}
+
+section{
+background-color: blue;
+border-radius: 10px;
+width: 500px;
+padding: 20px;
+margin: auto;
+box-shadow: 10px 10px 15px black;
+font-size: normal 20pt Arial;
+}
+
+footer{
+color: blue;
+text-align: center;
+font-style: italic;
+font-size: 15pt;
+}
